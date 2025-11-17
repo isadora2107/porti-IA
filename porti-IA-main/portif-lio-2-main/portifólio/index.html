@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore os mistérios dos oceanos com projetos e pesquisas sobre biologia marinha, recifes de corais, mamíferos marinhos, e conservação.">
+    <meta name="keywords" content="biologia marinha, recifes de coral, conservação, baleias, tartarugas marinhas, ecossistemas marinhos">
+    <title>Trabalhos Programação - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Trabalhos Programação</h1>
+            <p>Aprendendo a usar Python</p>
+        </div>
+    </header>
+
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="profile">
+                <img src="img/eu.jpeg" alt="Foto do biólogo marinho com a Dory no fundo" class="bio-img">
+                <div class="bio">
+                    <h2>Sobre Mim</h2>
+                    <p>Sou um programador apaixonado por tecnologia e pelo impacto que a programação pode ter na solução de problemas complexos. Com alguns anos de experiência em desenvolvimento de software, você trabalhou em diversos projetos desafiadores, explorando diferentes linguagens de programação e tecnologias, como Python, JavaScript e frameworks de dados. Sua experiência abrange tanto desenvolvimento web quanto análise de dados, e você tem se especializado em criação de algoritmos eficientes e otimização de sistemas para garantir soluções robustas e de alto desempenho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section dark">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img/ia.png" alt="Imagem de um recife de coral com diversos peixes coloridos">
+                    <h3>Entendendo a IA</h3>
+                    <p>Aprender a criar algoritmos de aleatoriedade em JavaScript é essencial para gerar resultados imprevisíveis, como em jogos ou sorteios. Além disso, dividir o código em módulos com export e import torna o projeto mais organizado e fácil de manter. As condicionais permitem que o programa tome decisões com base em diferentes situações. O uso de fluxogramas ajuda a visualizar o funcionamento lógico do código antes da implementação. O loop "for of" pode ser usado com condições de parada, controlando quando o laço deve encerrar. Já o método replace() é útil para substituir partes de uma string de forma prática. Com esses recursos, é possível escrever códigos mais eficientes, lógicos e bem estruturados.</p>
+                    <a href="projetos/recifes.html" class="btn">Saiba Mais</a>
+                </div>
+                <div class="project-card">
+                    <img src="img/senha.png" alt="Leão-marinho no mar">
+                    <h3>criando senhas</h3>
+                    <p>PAprender a manusear HTML, CSS e JavaScript é fundamental para desenvolver páginas web completas e interativas. Com esses conhecimentos, é possível criar websites responsivos, que se adaptam a diferentes tamanhos de tela e dispositivos. Além disso, aplicar princípios matemáticos na segurança de senhas ajuda a avaliar sua força e resistência contra ataques. A análise e comparação crítica de sites permite identificar boas práticas de design e segurança. Implementar funções de segurança de senhas é essencial para proteger os dados dos usuários. Essas habilidades combinadas formam a base para criar aplicações seguras, funcionais e modernas.</p>
+                    <a href="projetos/mamiferos.html" class="btn">Saiba Mais</a>
+                </div>
+                <div class="project-card">
+                    <img src="img/grafico.png" alt="Tartaruga marinha nadando em águas cristalinas">
+                    <h3>Introdução a Python</h3>
+                    <p>Identificar padrões em um conjunto de dados é um processo essencial para entender e interpretar informações, que pode ser feito ao analisar diferentes variáveis e suas interações. Para coletar dados, pode-se utilizar formulários online, que facilitam a coleta de informações de maneira estruturada. Após a coleta, os dados devem ser organizados em tabelas, o que facilita a manipulação e a análise, e essas tabelas podem ser exportadas para o formato CSV, permitindo o uso em diferentes ferramentas e plataformas. O Google Colab e a biblioteca Pandas são recursos poderosos para manipulação e análise de dados, permitindo a limpeza, transformação e exploração das informações de forma prática e eficiente. A visualização de dados é um passo crucial para entender tendências e padrões, e pode ser realizada gerando gráficos com Python, o que facilita a interpretação dos dados. Para entender o comportamento dos dados, as estatísticas descritivas são calculadas, fornecendo insights sobre medidas como média, mediana, desvio padrão, entre outras. Por fim, é importante comparar os dados obtidos com fontes externas para validar os resultados e contextualizar as informações de maneira mais ampla, fornecendo uma análise mais completa e confiável.</p>
+                    <a href="projetos/conservacao.html" class="btn">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section">
+        <div class="container">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/tropicalia.png" alt="Recife de Coral na Austrália" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/tempo objetivo.png" alt="Baleia nadando no oceano" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/vs code.png" alt="Tartaruga Marinha nadando" onclick="openModal(this)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para a galeria -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <section id="contato" class="section dark">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="contactForm" method="POST" action="submit_form.php">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-researchgate"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Biologia Marinha Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
